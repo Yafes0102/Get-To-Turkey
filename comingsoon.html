@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Get To Turkey | Coming Soon</title>
+  <style>
+    :root{
+      --orange:#FF6B35;
+      --orange-dark:#E55A2B;
+      --text:#ffffff;
+      --muted:rgba(255,255,255,.82);
+      --shadow: 0 18px 60px rgba(0,0,0,.45);
+      --radius: 18px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--text);
+      background:
+        linear-gradient(rgba(0,0,0,.62), rgba(0,0,0,.62)),
+        url("https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=2400&q=80");
+      background-size: cover;
+      background-position:center;
+      background-repeat:no-repeat;
+      display:grid;
+      place-items:center;
+      padding:22px;
+    }
+
+    .card{
+      width:min(820px, 100%);
+      text-align:center;
+      padding: clamp(22px, 4vw, 42px);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.14);
+      backdrop-filter: blur(10px);
+      box-shadow: var(--shadow);
+    }
+
+    h1{
+      margin:0 0 12px;
+      font-size: clamp(24px, 4vw, 40px);
+      letter-spacing: -.5px;
+      line-height:1.15;
+    }
+
+    p{
+      margin:0;
+      color: var(--muted);
+      font-size: clamp(14px, 1.6vw, 16px);
+      line-height:1.7;
+    }
+
+    .sub{
+      margin-top: 10px;
+      font-size: clamp(13px, 1.45vw, 15px);
+      opacity:.92;
+    }
+
+    .actions{
+      margin-top: 22px;
+      display:flex;
+      justify-content:center;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding: 14px 22px;
+      border-radius: 14px;
+      background: var(--orange);
+      color:#fff;
+      text-decoration:none;
+      font-weight:700;
+      border: 1px solid rgba(255,255,255,.12);
+      transition: .2s ease;
+      box-shadow: 0 14px 40px rgba(255,107,53,.22);
+    }
+    .btn:hover{
+      background: var(--orange-dark);
+      transform: translateY(-2px);
+    }
+
+    .tiny{
+      margin-top: 16px;
+      font-size: 12px;
+      color: rgba(255,255,255,.72);
+    }
+
+    @media (max-width: 420px){
+      .btn{width:100%}
+      .actions{width:100%}
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main" aria-label="Coming soon">
+    <h1>Our travel agency is being prepared for you.</h1>
+    <p class="sub">
+      If you would like to purchase a tour, you can visit our second agency, <strong>YFS TURIZM</strong>.
+    </p>
+
+    <div class="actions">
+      <a class="btn" href="https://yfsturizm.com.tr" target="_blank" rel="noopener">
+        Go to YFS TURIZM →
+      </a>
+    </div>
+
+    <div class="tiny">Get To Turkey • Coming Soon</div>
+  </main>
+</body>
+</html>
